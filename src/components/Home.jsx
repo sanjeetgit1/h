@@ -161,7 +161,7 @@ const Home = () => {
         <footer className="bg-gray-900 mt-20 text-gray-300 p-8 w-full absolute bottom-[-230vw] left-0">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-screen-lg mx-auto">
                         <div>
-                            <h3 className="text-xl font-bold mb-4">KASS</h3>
+                            <h3 className="text-xl font-bold mb-4">EduVentures</h3>
                             <p>We are providing high-quality courses for about ten years.</p>
                             <div className="flex space-x-4 mt-4">
                                 <a href="#" className="text-gray-400">Fb.</a>

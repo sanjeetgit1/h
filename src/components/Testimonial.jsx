@@ -134,7 +134,7 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <div className="w-[100vw] h-[200vh] bg-[#F3F8F8]">
+      <div className="w-[100vw] h-[100vh] bg-[#F3F8F8]">
         <img
           className="absolute w-[50vw] mt-[40vh]"
           src="https://craftohtml.themezaa.com/images/demo-elearning-bg-04.png"
@@ -169,7 +169,7 @@ const Testimonial = () => {
       </div>
 
       <div className="w-[100vw] h-[120vh] flex ">
-        <div className="left w-[50vw] h-[100vh] mt-[80vh]">
+        <div className="left w-[50vw] h-[50vh] mt-[80vh]">
           <img
             className="absolute ml-[-80px] mt-[2vw] hover:animate-pulse"
             src="https://craftohtml.themezaa.com/images/demo-elearning-05.png"
@@ -247,7 +247,7 @@ const Testimonial = () => {
              <footer className="bg-gray-900 mt-20 text-gray-300 p-8 w-full absolute bottom-[-180vh] left-0">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-screen-lg mx-auto">
                         <div>
-                            <h3 className="text-xl font-bold mb-4">KASS</h3>
+                            <h3 className="text-xl font-bold mb-4">EduVentures</h3>
                             <p>We are providing high-quality courses for about ten years.</p>
                             <div className="flex space-x-4 mt-4">
                                 <a href="#" className="text-gray-400">Fb.</a>

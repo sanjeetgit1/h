@@ -189,13 +189,13 @@ const About = () => {
         </section>
 
         {/* Meet Our Team Section */}
-        <section className="mb-16 w-[100vw] height-[40vh]">
+        <section className="mb-16 w-[95vw] height-[40vh]">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Meet Our Team</h3>
           <div className="flex  justify-center flex-wrap">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="w-full md:w-1/2 lg:w-1/3 p-4 relative rounded-lg overflow-hidden cursor-pointer transition-all duration-300 hover:bg-yellow-100 hover:bg-opacity-25 hover:ring-2 hover:ring-yellow-900"
+                className="w-full md:w-1/2 lg:w-1/4 p-4 relative rounded-lg overflow-hidden cursor-pointer transition-all duration-300 hover:bg-yellow-100 hover:bg-opacity-25 hover:ring-2 hover:ring-yellow-900"
                 onClick={() => handleCardClick(index)}
               >
                 <div className="bg-white rounded-lg shadow-lg text-center">
@@ -203,7 +203,7 @@ const About = () => {
                     <img
                       src={member.imgSrc}
                       alt={member.name}
-                      className="w-32 h-32 rounded-full mx-auto"
+                      className="w-28 h-28 rounded-full mx-auto mt-10"
                     />
                     {activeIndex === index && (
                       <div className="absolute inset-0 bg-blue-500 opacity-75"></div>
@@ -216,7 +216,7 @@ const About = () => {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block px-6 py-2 mt-2 text-white bg-blue-500 rounded-full hover:bg-blue-700 transition-all duration-300"
+                      className="inline-block px-6 py-2 mt-2 text-white bg-blue-500 rounded-full hover:bg-blue-700 transition-all duration-300 mb-10"
                     >
                       Follow +
                     </a>
@@ -250,7 +250,7 @@ kuldeepdhakad153@gamil.com            </a>
 	<footer className="bg-gray-900 mt-20 text-gray-300 p-8 w-full absolute top-90 left-0">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-screen-lg mx-auto">
                         <div>
-                            <h3 className="text-xl font-bold mb-4">KASS</h3>
+                            <h3 className="text-xl font-bold mb-4">EduVentures</h3>
                             <p>We are providing high-quality courses for about ten years.</p>
                             <div className="flex space-x-4 mt-4">
                                 <a href="#" className="text-gray-400">Fb.</a>

@@ -13,6 +13,7 @@ import Register from './components/Register';
 import AiPage from './components/AiPage'; 
 import TalkUs from './components/TalkUs'; // Import TalkUs component
 
+
 const App = () => {
   return (
     <div className="w-full p-10 m-auto">
@@ -29,7 +30,9 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/aiPage" element={<AiPage />} />
         <Route path="/car" element={<TalkUs />} /> {/* New route for TalkUs */}
+
       </Routes>
+     
     </div>
   );
 };
