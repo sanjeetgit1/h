@@ -5,10 +5,10 @@ const AiPage = () => {
     <div
       style={{
         width: '320mm', // A4 width in millimeters
-        height: '217mm', // A4 height in millimeters
+        height: '256mm', // A4 height in millimeters
         boxSizing: 'border-box',
         margin: '50px', // Centering the page horizontally
-        marginLeft: "-140px",
+        marginLeft: "-25px",
         backgroundColor: 'linear-gradient(135deg, #F0F8FF, #E6E6FA, #F5FFFA, #F0FFF0, #FFF5EE, #FDF5E6, #FAF0E6, #F5F5DC, #FFFFF0, #F0FFFF, #E0FFFF, #F0F8FF, #FAEBD7, #FFFAF0, #F5F5F5, #FFF8DC, #F8F8FF, #FDF5E6, #FFFAF0, #F5F5F5, #FAFAD2, #FFFACD, #F8F8FF, #FFFFE0, #FFFAFA)', // Light gradient background
         animation: 'backgroundAnimation 10s infinite', // Background animation
       }}

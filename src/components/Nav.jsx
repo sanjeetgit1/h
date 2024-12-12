@@ -46,12 +46,13 @@ const Nav = () => {
           Quiz
         </NavLink>
         <NavLink
-          to="/instructors"
+          to="/car"
           style={({ isActive }) => ({
             fontWeight: isActive ? '900' : '400',
             color: isActive ? 'yellow' : 'white',
           })}
         >
+          TalkUs
         </NavLink>
         <NavLink
           to="/testimonial"
