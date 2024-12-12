@@ -28,13 +28,13 @@ const Nav = () => {
           About
         </NavLink>
         <NavLink
-          to="/courses"
+          to="/AiPage"
           style={({ isActive }) => ({
             fontWeight: isActive ? '900' : '400',
             color: isActive ? 'yellow' : 'white',
           })}
         >
-          Courses
+          AiPage
         </NavLink>
         <NavLink
           to="/quiz"
@@ -52,7 +52,6 @@ const Nav = () => {
             color: isActive ? 'yellow' : 'white',
           })}
         >
-          Instructors
         </NavLink>
         <NavLink
           to="/testimonial"

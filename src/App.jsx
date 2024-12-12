@@ -9,8 +9,8 @@ import Exam from './components/Exam';
 import Contact from './components/Contact';
 import Testimonial from './components/Testimonial';
 import About from './components/About';
-import Register from './components/Register'; // Make sure you have this component
-
+import Register from './components/Register';
+import AiPage from './components/AiPage'; // Make sure the file name matches
 const App = () => {
   return (
     <div className="w-[80%] p-10 m-auto">
@@ -25,8 +25,7 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Testimonial" element={<Testimonial />} />
         <Route path="/About" element={<About />} />
-
-
+        <Route path="/AiPage" element={<AiPage />} /> {/* New route for AI page */}
         {/* Add other routes as needed */}
       </Routes>
     </div>

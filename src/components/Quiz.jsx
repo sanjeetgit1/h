@@ -27,7 +27,55 @@ const questions = [
     explanation: "Tokyo is the capital of Japan.",
     images: [],
   },
-  // Add more questions here
+  {
+    question: "What is the largest planet in our solar system?",
+    options: ["Earth", "Mars", "Jupiter", "Saturn"],
+    answer: 2,
+    explanation: "Jupiter is the largest planet in our solar system.",
+    images: [],
+  },
+  {
+    question: "What is the boiling point of water?",
+    options: ["100°C", "50°C", "200°C", "150°C"],
+    answer: 0,
+    explanation: "Water boils at 100°C under standard atmospheric conditions.",
+    images: [],
+  },
+  {
+    question: "Who developed the theory of relativity?",
+    options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Marie Curie"],
+    answer: 1,
+    explanation: "Albert Einstein developed the theory of relativity.",
+    images: [],
+  },
+  {
+    question: "What is the chemical symbol for gold?",
+    options: ["Au", "Ag", "Go", "Pt"],
+    answer: 0,
+    explanation: "The chemical symbol for gold is Au.",
+    images: [],
+  },
+  {
+    question: "Which continent is known as the Dark Continent?",
+    options: ["Asia", "Africa", "Europe", "Australia"],
+    answer: 1,
+    explanation: "Africa was historically referred to as the Dark Continent.",
+    images: [],
+  },
+  {
+    question: "What is the speed of light?",
+    options: ["3x10^8 m/s", "2x10^8 m/s", "1x10^8 m/s", "4x10^8 m/s"],
+    answer: 0,
+    explanation: "The speed of light in a vacuum is approximately 3x10^8 m/s.",
+    images: [],
+  },
+  {
+    question: "Who wrote 'Romeo and Juliet'?",
+    options: ["William Shakespeare", "Charles Dickens", "Leo Tolstoy", "Mark Twain"],
+    answer: 0,
+    explanation: "William Shakespeare wrote 'Romeo and Juliet'.",
+    images: [],
+  },
 ];
 
 const Quiz = () => {
@@ -93,34 +141,44 @@ const Quiz = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-5 bg-gray-100 shadow-lg rounded-lg">
-      <h1 className="text-center text-2xl font-bold">General Knowledge</h1>
-      <form id="quiz-form" onSubmit={handleSubmit}>
-        <div id="question-container">
-          <div className="question mb-5">
-            <p id="question-text" className="text-lg mb-2">{questions[currentQuestion].question}</p>
-            {questions[currentQuestion].options.map((option, index) => (
-              <label key={index} className="flex items-center mb-2 p-2 border rounded cursor-pointer hover:bg-gray-200">
-                <input type="radio" name="option" value={index} className="mr-2" />
-                {questions[currentQuestion].images[index] && (
-                  <img src={questions[currentQuestion].images[index]} alt={`Option ${index + 1}`} className="max-w-[50px] mr-2" />
-                )}
-                <span>{option}</span>
-              </label>
-            ))}
+    <div className="min-h-screen flex flex-col justify-between bg-gray-100">
+      <header className="bg-blue-500 text-white p-12 shadow-md text-center">
+        <h1 className="text-3xl font-bold">Quiz Master</h1>
+      </header>
+
+      <main className="max-w-xl mx-auto p-5 bg-white shadow-lg rounded-lg">
+        <h2 className="text-center text-2xl font-bold">General Knowledge</h2>
+        <form id="quiz-form" onSubmit={handleSubmit}>
+          <div id="question-container">
+            <div className="question mb-5">
+              <p id="question-text" className="text-lg mb-2">{questions[currentQuestion].question}</p>
+              {questions[currentQuestion].options.map((option, index) => (
+                <label key={index} className="flex items-center mb-2 p-2 border rounded cursor-pointer hover:bg-gray-200">
+                  <input type="radio" name="option" value={index} className="mr-2" />
+                  {questions[currentQuestion].images[index] && (
+                    <img src={questions[currentQuestion].images[index]} alt={`Option ${index + 1}`} className="max-w-[50px] mr-2" />
+                  )}
+                  <span>{option}</span>
+                </label>
+              ))}
+            </div>
+            <div className="feedback mt-2 text-lg" id="feedback">{feedback}</div>
           </div>
-          <div className="feedback mt-2 text-lg" id="feedback">{feedback}</div>
+          <button type="submit" className="block w-full mt-5 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            Submit
+          </button>
+        </form>
+        <div className="progress text-center mt-5" id="progress">
+          Question {currentQuestion + 1} of {questions.length}
         </div>
-        <button type="submit" className="block w-full mt-5 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-          Submit
-        </button>
-      </form>
-      <div className="progress text-center mt-5" id="progress">
-        Question {currentQuestion + 1} of {questions.length}
-      </div>
-      <div className="timer text-center mt-2" id="timer">
-        {`0${Math.floor(timer / 60)}`.slice(-2)}:{`0${timer % 60}`.slice(-2)}
-      </div>
+        <div className="timer text-center mt-2" id="timer">
+          {`0${Math.floor(timer / 60)}`.slice(-2)}:{`0${timer % 60}`.slice(-2)}
+        </div>
+      </main>
+
+      <footer className="bg-blue-500 text-white p-4 text-center">
+        <p className="text-sm">© 2024 Quiz Master. All Rights Reserved.</p>
+      </footer>
     </div>
   );
 };
