@@ -73,47 +73,91 @@ const Home = () => {
         </div>
         <div className="card flex gap-10 items-center justify-center p-20">
           <div className="w-[22vw] h-[28vw] bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img src="https://craftohtml.themezaa.com/images/demo-elearning-courses-01.jpg" alt="Course 1" className="w-full h-[60%] object-cover"/>
+            <img src="https://img.freepik.com/premium-photo/yellow-snake-with-blue-eyes-peeking-out-laptop-screen-with-code_885831-168257.jpg?w=740" alt="Course 1" className="w-full h-[60%] object-cover"/>
             <div className="p-4">
-              <h2 className="text-xl font-bold mb-2">Course Title 1</h2>
+              <h2 className="text-xl font-bold mb-2">The Complete Python Bootcamp
+              From Zero to Hero in Python</h2>
               <p className="text-gray-600">A brief description of the course content and what learners can expect.</p>
+               
+      <div className="flex justify-between items-center">
+        <span className="text-lg font-bold text-gray-800">₹599</span>
+        <button  className="px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
+          Buy Now
+        </button>
+      </div>
+    
+
+            </div>
+            
+          </div>
+          <div className="w-[22vw] h-[28vw] bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+            <img src="https://imarticus.org/blog/wp-content/uploads/2021/12/learn-Python-for-data-science.jpg" alt="Course 2" className="w-full h-[60%] object-cover"/>
+            <div className="p-4">
+              <h2 className="text-xl font-bold mb-2">Python for Data Science and
+              Machine Learning Bootcamp</h2>
+              <p className="text-gray-600">Affordable course providing valuable skills with lifetime benefits.</p>
+              <div className="flex justify-between items-center">
+        <span className="text-lg font-bold text-gray-800">₹599</span>
+        <button className="px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
+          Buy Now
+        </button>
+      </div>
             </div>
           </div>
           <div className="w-[22vw] h-[28vw] bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img src="https://craftohtml.themezaa.com/images/demo-elearning-courses-02.jpg" alt="Course 2" className="w-full h-[60%] object-cover"/>
+            <img src="https://treinetic.com/wp-content/uploads/2023/09/Generative-AI-and-Deep-Learning.png" alt="Course 3" className="w-full h-[60%] object-cover"/>
             <div className="p-4">
-              <h2 className="text-xl font-bold mb-2">Course Title 2</h2>
-              <p className="text-gray-600">A brief description of the course content and what learners can expect.</p>
-            </div>
-          </div>
-          <div className="w-[22vw] h-[28vw] bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img src="https://craftohtml.themezaa.com/images/demo-elearning-courses-03.jpg" alt="Course 3" className="w-full h-[60%] object-cover"/>
-            <div className="p-4">
-              <h2 className="text-xl font-bold mb-2">Course Title 3</h2>
-              <p className="text-gray-600">A brief description of the course content and what learners can expect.</p>
+              <h2 className="text-xl font-bold mb-2">Generative Al and Machine Learning with Python</h2>
+              <p className="text-gray-600">Buy this course to gain skills and secure a brighter future.</p>
+
+              <div className="flex justify-between items-center">
+        <span className="text-lg font-bold text-gray-800">₹599</span>
+        <button className="px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
+          Buy Now
+        </button>
+      </div>
+
             </div>
           </div>
         </div>
         <div className="card flex gap-10 items-center justify-center p-20">
           <div className="w-[22vw] h-[28vw] bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img src="https://craftohtml.themezaa.com/images/demo-elearning-courses-04.jpg" alt="Course 4" className="w-full h-[60%] object-cover"/>
+            <img src="https://www.finoit.com/wp-content/uploads/2022/09/clean-code-java-principles.jpg" alt="Course 4" className="w-full h-[60%] object-cover"/>
             <div className="p-4">
-              <h2 className="text-xl font-bold mb-2">Course Title 4</h2>
-              <p className="text-gray-600">A brief description of the course content and what learners can expect.</p>
+              <h2 className="text-xl font-bold mb-2">JAVA</h2>
+              <p className="text-gray-600">Learn Java, enhances programming skills, enabling development of powerful applications.</p>
+              <div className="flex justify-between items-center">
+        <span className="text-lg font-bold text-gray-800">₹599</span>
+        <button className="px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
+          Buy Now
+        </button>
+      </div>
             </div>
           </div>
           <div className="w-[22vw] h-[28vw] bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img src="https://craftohtml.themezaa.com/images/demo-elearning-courses-05.jpg" alt="Course 5" className="w-full h-[60%] object-cover"/>
+            <img src="https://img-c.udemycdn.com/course/750x422/4490482_f3e4_2.jpg" alt="Course 5" className="w-full h-[60%] object-cover"/>
             <div className="p-4">
-              <h2 className="text-xl font-bold mb-2">Course Title 5</h2>
-              <p className="text-gray-600">A brief description of the course content and what learners can expect.</p>
+              <h2 className="text-xl font-bold mb-2">C++</h2>
+              <p className="text-gray-600">C++ course builds programming skills for high-performance, efficient software development.</p>
+              <div className="flex justify-between items-center">
+        <span className="text-lg font-bold text-gray-800">₹599</span>
+        <button className="px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
+          Buy Now
+        </button>
+      </div>
             </div>
           </div>
           <div className="w-[22vw] h-[28vw] bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img src="https://craftohtml.themezaa.com/images/demo-elearning-courses-06.jpg" alt="Course 6" className="w-full h-[60%] object-cover"/>
+            <img src="https://wpdean.com/wp-content/uploads/2024/05/tailwind-css.jpg" alt="Course 6" className="w-full h-[60%] object-cover"/>
             <div className="p-4">
-              <h2 className="text-xl font-bold mb-2">Course Title 6</h2>
-              <p className="text-gray-600">A brief description of the course content and what learners can expect.</p>
+              <h2 className="text-xl font-bold mb-2">Tailwind CSS</h2>
+              <p className="text-gray-600">Learn utility-first design to create responsive, customizable, and efficient websites.</p>
+              <div className="flex justify-between items-center">
+        <span className="text-lg font-bold text-gray-800">₹799</span>
+        <button className="px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">
+          Buy Now
+        </button>
+      </div>
             </div>
           </div>
         </div>
