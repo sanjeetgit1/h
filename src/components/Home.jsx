@@ -22,7 +22,7 @@ const Home = () => {
             </div>
           </div>
           <div className="rightside w-[60vw] flex justify-center relative">
-            <img className="w-[45vw] absolute mt-[5vw]" src="https://craftohtml.themezaa.com/images/demo-elearning-hero-banner-01.png" alt="" />
+            <img className="w-[45vw] absolute mt-[5vw]" src="https://higherhorizons.co.uk/wp-content/uploads/2022/08/activity-tasks-image.png" alt="" />
             <img className="w-[43vw] absolute ml-5" src="https://craftohtml.themezaa.com/images/demo-elearning-hero-banner-02.png" alt="" />
           </div>
         </div>

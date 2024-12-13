@@ -84,15 +84,7 @@ const Nav = () => {
         </NavLink>
       </div>
       <div className="flex space-x-4 items-start">
-        <NavLink
-          to="/login"
-          style={({ isActive }) => ({
-            fontWeight: isActive ? '900' : '400',
-            color: isActive ? 'yellow' : 'white',
-          })}
-        >
-          Login
-        </NavLink>
+        
         <NavLink
           to="/signup"
           style={({ isActive }) => ({
@@ -101,6 +93,15 @@ const Nav = () => {
           })}
         >
           Signup
+        </NavLink>
+        <NavLink
+          to="/login"
+          style={({ isActive }) => ({
+            fontWeight: isActive ? '900' : '400',
+            color: isActive ? 'yellow' : 'white',
+          })}
+        >
+          Login
         </NavLink>
       </div>
     </nav>

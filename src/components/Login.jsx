@@ -1,90 +1,68 @@
-// src/components/Login.jsx
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { loginSchema } from '../schema/loginSchema'; // Corrected import path
+import React from 'react';
 
-const Login = () => {
-  const [formData, setFormData] = useState({ email: '', password: '' });
-  const [error, setError] = useState('');
-  const navigate = useNavigate();
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await loginSchema.validate(formData, { abortEarly: false });
-      const users = JSON.parse(localStorage.getItem('users')) || [];
-      const user = users.find((u) => u.email === formData.email && u.password === formData.password);
-
-      if (user) {
-        localStorage.setItem('loggedInUser', JSON.stringify(user));
-        navigate('/home');
-      } else {
-        setError('Invalid email or password');
-      }
-    } catch (err) {
-      setError(err.errors[0]);
-    }
-  };
-
-  const handleRegisterClick = () => {
-    navigate('/Signup'); // Navigate to the registration page
-  };
-
+function Login() {
   return (
-    <div className="max-w-md mt-[10vw] mx-auto p-5 bg-gray-100 shadow-lg rounded-lg">
-      <h1 className="text-2xl font-bold text-center mb-5">Login</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="flex flex-col">
-          <label htmlFor="email" className="text-sm font-medium">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
-            placeholder="Enter your email"
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="bg-white rounded-lg shadow-lg flex flex-col md:flex-row w-full max-w-4xl">
+        {/* Left Side */}
+        <div className="flex-1 flex justify-center items-center p-6">
+          <img 
+            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" 
+            alt="Login Illustration" 
+            className="w-full max-w-sm rounded-lg" 
           />
         </div>
-        <div className="flex flex-col">
-          <label htmlFor="password" className="text-sm font-medium">
-            Password
-          </label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
-            placeholder="Enter your password"
-          />
+
+        {/* Right Side */}
+        <div className="flex-1 p-6">
+          <h2 className="text-2xl font-bold text-center mb-6">Sign in</h2>
+
+          <form className="space-y-4">
+            {/* Username/Email Input */}
+            <div className="flex items-center border border-gray-300 rounded-lg p-3">
+              <i className="fas fa-user text-gray-500 mr-3"></i>
+              <input 
+                type="text" 
+                placeholder="Username or Email" 
+                className="w-full bg-transparent focus:outline-none" 
+              />
+            </div>
+
+            {/* Password Input */}
+            <div className="flex items-center border border-gray-300 rounded-lg p-3">
+              <i className="fas fa-lock text-gray-500 mr-3"></i>
+              <input 
+                type="password" 
+                placeholder="Password" 
+                className="w-full bg-transparent focus:outline-none" 
+              />
+            </div>
+
+            {/* Remember Me Checkbox */}
+            <div className="flex items-center space-x-2">
+              <input 
+                type="checkbox" 
+                id="remember" 
+                className="rounded border-gray-300 focus:ring-blue-500"
+              />
+              <label htmlFor="remember" className="text-gray-600">Remember me</label>
+            </div>
+
+            {/* Login Button */}
+            <button className="w-full bg-blue-500 text-white py-2 rounded-lg font-semibold hover:bg-blue-600">
+              Login
+            </button>
+          </form>
+
+          {/* Additional Links */}
+          <div className="text-center mt-4 text-gray-600">
+            <p>Don't have an account? <a href="/signup" className="text-blue-500 hover:underline">Sign up</a></p>
+            <p><a href="/signup" className="text-blue-500 hover:underline">Forgot password?</a></p>
+          </div>
         </div>
-        {error && <p className="text-red-500 text-sm">{error}</p>}
-        <button
-          type="submit"
-          className="w-full py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
-        >
-          Login
-        </button>
-      </form>
-      <div className="mt-4 text-sm text-center text-gray-600">
-        Don't have an account?{' '}
-        <a onClick={handleRegisterClick} className="text-blue-500 hover:text-blue-700 cursor-pointer">
-          Register here
-        </a>
       </div>
     </div>
   );
-};
+}
 
 export default Login;
