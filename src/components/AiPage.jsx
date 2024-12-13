@@ -2,7 +2,7 @@ import React from 'react';
 
 const AiPage = () => {
   return (
-    <div className="w-[400mm] h-[185mm] box-border mx-auto -ml-[25px] bg-gradient-to-br from-[#F0F8FF] to-[#E0FFFF] animate-bgAnimation">
+    <div className="w-[400mm] h-[195mm] box-border mx-auto -ml-[2vw] mt-[-5vw] bg-gradient-to-br from-[#F0F8FF] to-[#E0FFFF] animate-bgAnimation">
     <h1 className="text-center mb-5 animate-titleAnimation">AI Webpage</h1>
     <div className="w-full h-[calc(100%-40px)] overflow-hidden">
       <iframe

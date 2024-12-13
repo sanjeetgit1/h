@@ -34,7 +34,7 @@ const Nav = () => {
             color: isActive ? 'yellow' : 'white',
           })}
         >
-          AiPage
+          AI-bot
         </NavLink>
         <NavLink
           to="/quiz"
@@ -52,7 +52,7 @@ const Nav = () => {
             color: isActive ? 'yellow' : 'white',
           })}
         >
-          TalkUs
+          ChatUs
         </NavLink>
         <NavLink
           to="/testimonial"

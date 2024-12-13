@@ -119,9 +119,9 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className="rightside w-[60vw] flex justify-center relative">
+          <div className="rightside w-[60vw] flex justify-center relative ">
             <img
-              className="w-[45vw] absolute mt-[5vw]"
+              className="w-[45vw] absolute mt-[5vw] mr-36"
               src="https://craftohtml.themezaa.com/images/demo-elearning-05.png"
               alt=""
             />
@@ -145,10 +145,10 @@ const Testimonial = () => {
         </div>
         <div className="card w-full h-full flex flex-wrap gap-10 items-center justify-center p-20">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="w-[20vw] h-[28vw] bg-white overflow-hidden shadow-md rounded-lg">
-              <img className="object-cover w-full h-[40%]" src={testimonial.photoUrl} />
+            <div key={testimonial.id} className="w-[20vw] h-[28vw]  bg-white overflow-hidden shadow-md rounded-lg">
+              <img className="object-cover w-full h-[50%] " src={testimonial.photoUrl} />
               <div className="p-4">
-                <h1 className="text-xl font-bold mb-2">{testimonial.name}</h1>
+                <h1 className="text-xl font-bold mb-2 ">{testimonial.name}</h1>
                 <p className="text-sm mb-2">{testimonial.experience}</p>
                 <p className="text-sm font-bold mb-2">Business accounting and taxation fundamentals</p>
                 <div className="flex items-center">
