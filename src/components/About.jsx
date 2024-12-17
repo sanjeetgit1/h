@@ -65,7 +65,7 @@ const About = () => {
           </div>
           <div className="rightside w-[60vw] flex justify-center relative">
             <img
-              className="w-[45vw] absolute mt-[5vw]"
+              className="w-[45vw] absolute mt-[5vw] ml-[-9vw]"
               src="https://craftohtml.themezaa.com/images/demo-elearning-05.png"
               alt=""
             />
@@ -86,16 +86,72 @@ const About = () => {
 
         {/* Mission Section */}
         <section className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
-          <p className="text-lg text-gray-600">
+          <h3 className="text-2xl font-bold text-gray-800 mb-4 justify-center text-center">Our Mission</h3>
+          <p className="text-lg text-gray-600 w-[60vw] text-center justify-center ml-[20vw]">
             Our mission is to empower learners of all ages by providing accessible, high-quality educational resources and fostering a community of lifelong learning. We strive to bridge gaps in education through innovative technology, personalized learning experiences, and a commitment to inclusivity and excellence.
           </p>
         </section>
 
         {/* What We Offer Section */}
         <section className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">What We Offer</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h3 className="text-2xl font-bold text-gray-800 mb-4 ml-[5vw] 
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          text-center justify-center">What We Offer</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-[10vw] gap-8">
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h4 className="text-xl font-bold mb-2 text-gray-800">Courses and Lessons</h4>
               <p className="text-gray-600">
@@ -135,67 +191,36 @@ const About = () => {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h4 className="text-xl font-bold mb-2 text-gray-800">Parental and Educator Support</h4>
               <p className="text-gray-600">
-                Guides and tips, progress reports, community for educators.
-				Guides and tips, progress reports, community for educators.
-                Guides and tips, progress reports, community for educators.
-                Guides and tips, progress reports, community for educators.
+              Parental and educator support can have a significant impact on a child's academic performance, social and emotional development, and overall success.
+				
 
               </p>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h4 className="text-xl font-bold mb-2 text-gray-800">Technology Integration</h4>
               <p className="text-gray-600">
-                Mobile app, gamification, data security.
+              Technology integration is the use of technology to make work, school, or daily life more efficient, faster, or easier
               </p>
             </div>
 			<div className="bg-white rounded-lg shadow-lg p-6">
               <h4 className="text-xl font-bold mb-2 text-gray-800">Parental and Educator Support</h4>
               <p className="text-gray-600">
-                Guides and tips, progress reports, community for educators.
-				Guides and tips, progress reports, community for educators.
-                Guides and tips, progress reports, community for educators.
-                Guides and tips, progress reports, community for educators.
+              Parental and educator support can have a significant impact on a child's academic performance, social and emotional development, and overall success
+				
 
               </p>
-            </div>  <div className="bg-white rounded-lg shadow-lg p-6">
-              <h4 className="text-xl font-bold mb-2 text-gray-800">Parental and Educator Support</h4>
-              <p className="text-gray-600">
-                Guides and tips, progress reports, community for educators.
-				Guides and tips, progress reports, community for educators.
-                Guides and tips, progress reports, community for educators.
-                Guides and tips, progress reports, community for educators.
-
-              </p>
-            </div>  <div className="bg-white rounded-lg shadow-lg p-6">
-              <h4 className="text-xl font-bold mb-2 text-gray-800">Parental and Educator Support</h4>
-              <p className="text-gray-600">
-                Guides and tips, progress reports, community for educators.
-				Guides and tips, progress reports, community for educators.
-                Guides and tips, progress reports, community for educators.
-                Guides and tips, progress reports, community for educators.
-
-              </p>
-            </div>  <div className="bg-white rounded-lg shadow-lg p-6">
-              <h4 className="text-xl font-bold mb-2 text-gray-800">Parental and Educator Support</h4>
-              <p className="text-gray-600">
-                Guides and tips, progress reports, community for educators.
-				Guides and tips, progress reports, community for educators.
-                Guides and tips, progress reports, community for educators.
-                Guides and tips, progress reports, community for educators.
-
-              </p>
-            </div>
+            </div> 
           </div>
         </section>
 
         {/* Meet Our Team Section */}
         <section className="mb-16 w-[95vw] height-[40vh]">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">Meet Our Team</h3>
-          <div className="flex  justify-center flex-wrap">
+          <h3 className="text-3xl font-bold text-gray-800 mb-4 text-center">Meet Our Team</h3>
+          <div className="flex w-[80%] ml-[10vw] justify-center flex-wrap">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className=" md:w-1/2 lg:w-1/4 p-4 relative rounded-lg overflow-hidden cursor-pointer transition-all duration-300 hover:bg-yellow-100 hover:bg-opacity-25 hover:ring-2 hover:ring-yellow-900"
+                className="  md:w-1/2 lg:w-1/2 p-16 relative rounded-lg overflow-hidden cursor-pointer transition-all duration-300 hover:bg-yellow-100 hover:bg-opacity-25 hover:ring-2 hover:ring-yellow-900"
                 onClick={() => handleCardClick(index)}
               >
                 <div className="bg-white rounded-lg shadow-lg text-center">
@@ -229,8 +254,8 @@ const About = () => {
 
         {/* Contact Us Section */}
         <section className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h3>
-          <p className="text-lg text-gray-600">
+          <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Contact Us</h3>
+          <p className="text-lg text-gray-600 text-center">
             Have questions? Reach out to us at{' '}
             <a href="mailto:contact@yourcompany.com" className="text-blue-500 hover:underline">
 kuldeepdhakad153@gamil.com            </a>
